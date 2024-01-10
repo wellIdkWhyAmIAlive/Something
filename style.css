@@ -1,0 +1,460 @@
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2") format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+*::selection {
+    background-color: white;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    color: white;
+}
+
+#center {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    overflow: hidden;
+}
+
+#center h1 {
+    line-height: 6.2vw;
+}
+
+#center h1 span {
+    font-weight: 900;
+    position: relative;
+    transition: all ease 0.4s;
+    color: red;
+}
+
+#center h4 {
+    font-size: 1.3vw;
+}
+
+#center h5 {
+    font-size: 0.7vw;
+}
+
+.hidden {
+    display: none;
+}
+
+#top-right {
+    font-size: 0.5vw;
+    width: 18vw;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+}
+
+#bottom {
+    font-size: 0.5vw;
+    width: 18vw;
+    padding: 1vw;
+    /* position: absolute; */
+    bottom: 0;
+}
+
+#anotherFkingDiv {
+    font-size: 0.5vw;
+    width: 13vw;
+    padding: 1vw;
+    /* position: absolute; */
+    bottom: 0;
+    position: relative;
+    left: 88%;
+    /* background-color: white; */
+}
+
+#epilogue {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#disclaimer {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page2 {
+    position: relative;
+    font-weight: 400;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+    padding-bottom: 10vw;
+}
+
+#center2 {
+    position: relative;
+    padding: 10vw 20vw;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 1.2vw;
+    padding-bottom: 5vw;
+}
+
+#image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#image-container img {
+    padding-top: 1vw;
+    padding-right: 2vw;
+    object-fit: cover;
+    height: 20vw;
+    z-index: 9;
+    position: relative;
+}
+
+#image-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#image-container2 img {
+    margin-top: 1vw;
+    margin-right: 2vw;
+    margin-bottom: 0.5vw;
+    object-fit: cover;
+    border-radius: 20px;
+    height: 9vw;
+}
+
+#image-container2 p {
+    padding-top: 1vw;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con {
+    /* background-color: lightblue; */
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text h1 {
+    font-size: 5vw;
+    font-weight: 400;
+    display: inline-block;
+}
+
+#gola {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0.1vw 0.5vw;
+    background-color: #fe320a;
+    display: inline-block;
+    filter: blur(2px);
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page2 #gooey {
+    height: 18vw;
+    width: 18vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top, #fe320a, #fe700a);
+    top: 10%;
+    right: 10%;
+    filter: blur(15px);
+    animation-name: gooey;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#page2 #gooey2 {
+    height: 18vw;
+    width: 18vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top, #fe320a, #fe700a);
+    top: 60%;
+    left: 10%;
+    filter: blur(15px);
+    animation-name: gooey;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gooey {
+    from {
+        transform: translate(10%, -10%) skew(0);
+    }
+    to {
+        transform: translate(-10%, 10%) skew(10deg);
+    }
+}
+
+#center2 p {
+    position: relative;
+    z-index: 9;
+}
+
+#something {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+#something2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page5 {
+    padding: 0 2vw;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+    font-size: 1.5em;
+    position: relative;
+}
+
+#page6 {
+    padding: 7vw 2vw;
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    cursor: url('favicon-32x32.png'), auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page6 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page6 h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#page7 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page8 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page8 #something2 img {
+    /* background-blend-mode: darken; */
+    height: 10vw;
+    object-fit: contain;
+    display: none;
+}
+
+#page8-2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page8-2 #something2 video {
+    border-radius: 1vw;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.14);
+    /* padding-top: 20px; */
+}
+
+#button-div button {
+    height: 70px;
+    width: 150px;
+    margin: 30px 100px;
+    font-size: 2rem;
+    font-weight: 300;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.14);
+    transition: all ease-in-out 0.3s;
+}
+
+#button-div button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+}
+
+#button-div button:active {
+    background-color: white;
+    color: black;
+}
+
+#page9 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page10 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+#page10 img {
+    margin: 1vw 0vw;
+    border-radius: 20px;
+    height: 20vw;
+}
+
+#page11 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+}
+
+.con span {
+    -webkit-text-stroke: #fe700a 2.2px;
+    color: transparent;
+}
+
+#page5 #something span {
+    font-weight: 800;
+    -webkit-text-stroke: rgb(0, 119, 255) 2px;
+    color: transparent;
+}
+
+#typewriter {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+    /* color: white; */
+    /* background-color: black; */
+}
+
+#typewriter h1 {
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+#typewriter span {
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: 500;
+    color: purple;
+}
+
+#page12 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(242, 241, 235);
+    overflow: hidden;
+}
+
+#noButton {
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
